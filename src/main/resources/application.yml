@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: student
+    password: 123456
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+      connection-timeout: 6000
+      maximum-pool-size: 5
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+
